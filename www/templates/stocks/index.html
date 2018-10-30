@@ -1,0 +1,17 @@
+<ion-view title="Stocks" id="page1">
+  <ion-content padding="true" class="has-header">
+    <h1 id="stocks-heading1" style="color:#000000;">Symbols</h1>
+    <form id="stocks-form1" class="list">
+      <label class="item item-select" id="stocks-select1">
+        <span class="input-label">Symbol</span>
+        <select ng-model="stock.symbol">
+          <option value="AAPL">AAPL - Apple Computer</option>
+          <option value="GE">GE - General Electric Company</option>
+          <option value="SBUX">SBUX - Starbucks Corporation</option>
+          <option value="WBA">WBA - Walgreens Company</option>
+        </select>
+      </label>
+    </form>
+    <a ui-sref="stocksShow({symbol: stock.symbol})" id="stocks-button3" class="button button-positive button-block">Get info</a>
+  </ion-content>
+</ion-view>
